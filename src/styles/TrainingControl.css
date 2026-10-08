@@ -1,0 +1,244 @@
+.training-control {
+  width: 100%;
+  background-color: white;
+
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+
+/* HEADER */
+
+.training-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 24px;
+
+  border-bottom: 1px solid #ddd;
+  background-color: #404df7;;
+}
+
+.training-header h2 {
+  margin: 0 0 5px 0;
+}
+
+.training-header p {
+  color: white;
+}
+
+
+/* STATUS */
+
+.training-header-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.training-status {
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.training-status.idle {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.training-status.starting {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.training-status.running {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.training-status.stopping {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.training-status.completed {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+.training-status.stopped {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.training-status.error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+
+/* CONEXÃO */
+
+.connection-status {
+  font-size: 12px;
+
+  padding: 5px 8px;
+
+  border-radius: 5px;
+}
+
+.connection-status.connected {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.connection-status.disconnected {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+
+/* BOTÕES */
+
+.training-buttons {
+  display: flex;
+  gap: 12px;
+
+  padding: 20px 24px;
+}
+
+.training-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  border: none;
+  border-radius: 6px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.training-buttons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.start-button {
+  background-color: #16a34a;
+  color: white;
+}
+
+.start-button:hover:not(:disabled) {
+  background-color: #15803d;
+}
+
+.stop-button {
+  background-color: #dc2626;
+  color: white;
+}
+
+.stop-button:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+
+/* INFORMAÇÕES */
+
+.training-info {
+  display: flex;
+  gap: 10px;
+
+  padding: 12px 24px;
+
+  background-color: #f8fafc;
+
+  border-bottom: 1px solid #eee;
+}
+
+
+/* AVISO */
+
+.training-warning {
+  margin: 20px 24px 0 24px;
+
+  padding: 12px 16px;
+
+  background-color: #fef3c7;
+  color: #92400e;
+
+  border-radius: 6px;
+}
+
+
+/* ERRO */
+
+.training-error {
+  margin: 0 24px 20px 24px;
+
+  padding: 12px 16px;
+
+  background-color: #fee2e2;
+  color: #b91c1c;
+
+  border-radius: 6px;
+}
+
+
+/* TERMINAL */
+
+.terminal-container {
+  margin: 0 24px 24px 24px;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  border: 1px solid #374151;
+}
+
+.terminal-header {
+  padding: 10px 15px;
+
+  background-color: #1f2937;
+  color: #d1d5db;
+
+  font-size: 13px;
+}
+
+.training-terminal {
+  height: 200px;
+
+  padding: 18px;
+
+  overflow-y: auto;
+
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+.training-terminal pre {
+  margin: 0;
+
+  white-space: pre-wrap;
+  word-break: break-word;
+
+  font-family:
+    Consolas,
+    "Courier New",
+    monospace;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}

@@ -1,0 +1,33 @@
+.training-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.training-page-header {
+  margin-bottom: 20px;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  background-color: #e5e7eb;
+  color: #1f2937;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #d1d5db;
+}
